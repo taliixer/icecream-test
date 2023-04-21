@@ -1,8 +1,10 @@
 //Componentes
-@import './common';
+
 @import './header';
 @import './header-hero';
+@import './gallery.scss';
 @import './footer';
 
 //Utilidades
+@import '../utils/common';
 @import '../utils/variables.scss';
