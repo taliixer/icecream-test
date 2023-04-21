@@ -1,0 +1,12 @@
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 128px;
+  padding: 6px 20px;
+}
+.navigation__list {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
