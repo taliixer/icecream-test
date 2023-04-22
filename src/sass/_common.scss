@@ -1,9 +1,13 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-<<<<<<< HEAD
+
 .container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
-=======
->>>>>>> bcd010e95363e6827ef981b17043f391868ad166
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}

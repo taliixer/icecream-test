@@ -1,9 +1,21 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.logo__circle {
+  background-color: $main;
+}
+.logo__icon {
+  fill: $polar;
+}
+
 .header-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 128px;
-  padding: 6px 20px;
+  padding: 56px 56px 0;
 }
 .navigation__list {
   display: flex;
