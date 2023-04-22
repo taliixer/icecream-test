@@ -1,12 +1,15 @@
+// @use './utils/variables' as v;
 .logo {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 .logo__circle {
+  // background-color: v.$main;
   background-color: $main;
 }
 .logo__icon {
+  // fill: v.$polar;
   fill: $polar;
 }
 
