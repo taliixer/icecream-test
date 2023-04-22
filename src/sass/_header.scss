@@ -44,11 +44,14 @@
   color: $polar;
   border-radius: 22px;
   padding: 12px 5px;
+  // // transform: scale(2);
+  // transition: all 1.15s cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus,
   &:active {
-    color: $main;
-    background-color: $menu-bg;
+    color: #d41443;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(212, 20, 67, 0.2);
     border: none;
   }
   &--current {
@@ -68,6 +71,12 @@
   height: 44px;
   width: 159px;
   cursor: pointer;
+
+  &:hover {
+    background-color: #ecebeb;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(212, 20, 67, 0.2);
+  }
 }
 .button::after {
   content: '>';
@@ -80,6 +89,10 @@
   font: normal 400 26px/1.15em Titan One, cursive;
   text-transform: uppercase;
   width: 218px;
+
+  &:hover {
+    transform: scale(1) translateY(0);
+  }
 }
 .hero__order-title--accent {
   font: normal 400 48px/0.905em Titan One, cursive;
@@ -87,14 +100,55 @@
   text-transform: uppercase;
   color: #d41443;
   display: block;
+  margin-bottom: 24px;
 }
 .hero__button {
-  font: normal 400 8px/1.25em DM Sans, sans-serif;
-  min-width: 62.4px;
-  height: 24px;
+  font: normal 400 14px/1.28 DM Sans, sans-serif;
+  width: 107px;
+  height: 40px;
   text-align: center;
   border-radius: 20px;
   border: none;
   background: $main;
-  color: #fff;
+  color: $polar;
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: scale(1.1);
+    background: $btn1-hover;
+    color: #fff;
+  }
+}
+
+.hero__button--max {
+  font: normal 400 14px/1.28 DM Sans, sans-serif;
+  width: 107px;
+  height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  background: $polar;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background: $btn2-hover;
+    color: $btn1-prod-loc;
+    transform: scale(1.1);
+  }
+}
+.hero__position {
+  display: flex;
+  flex-direction: column;
+}
+.hero__text {
+  // width: 200px;
+  // padding-top: 60px;
+  width: 200px;
+  padding-top: 60px;
+  position: absolute;
+  left: 400px;
+  color: $polar;
 }
