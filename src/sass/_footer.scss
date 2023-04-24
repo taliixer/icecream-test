@@ -1,0 +1,18 @@
+.footer__buttom {
+  font: normal 400 14px/1.28 DM Sans, sans-serif;
+  width: 107px;
+  height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  background: $polar;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background: $btn2-hover;
+    color: $btn1-prod-loc;
+    transform: scale(1.1);
+  }
+}
